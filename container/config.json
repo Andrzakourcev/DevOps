@@ -1,0 +1,47 @@
+{
+  "ociVersion": "1.0.0",
+  "hostname": "mycontainer",
+  "process": {
+    "terminal": true,
+    "user": {
+      "uid": 0,
+      "gid": 0
+    },
+    "args": [
+      "/bin/sh"
+    ],
+    "env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "TERM=xterm"
+    ],
+    "cwd": "/"
+  },
+  "root": {
+    "path": "alpine-rootfs",
+    "readonly": false
+  },
+  "mounts": [
+    {
+      "destination": "/proc",
+      "type": "proc",
+      "source": "proc"
+    }
+  ],
+  "linux": {
+    "namespaces": [
+      {"type": "pid"},
+      {"type": "mount"},
+      {"type": "uts"}
+    ],
+    "resources": {
+      "memory": {
+        "limit": 100000000
+      },
+      "cpu": {
+        "shares": 512,
+        "quota": 50000,
+        "period": 100000
+            }
+        }
+    }
+}
