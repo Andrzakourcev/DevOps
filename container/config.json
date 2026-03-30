@@ -17,7 +17,7 @@
     "cwd": "/"
   },
   "root": {
-    "path": "alpine-rootfs",
+    "path": "rootfs",
     "readonly": false
   },
   "mounts": [
