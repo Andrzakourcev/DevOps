@@ -222,7 +222,7 @@ channel 2: open failed: connect failed: Connection refused
 
 ![telegram-cloud-photo-size-2-5402325133701092523-y](https://github.com/user-attachments/assets/d3ca6a09-792c-4182-a34a-58c8bb1470c6)
 
-Не тянется образ тк неверный тэг - лезет на dockerhub
+Не тянется образ тк неверный тэг - лезем на dockerhub
 
 Там ищем один из последних образов - берем `1.29-alpine`
 
