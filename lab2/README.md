@@ -167,7 +167,7 @@ root@m5:/home/andrey/devops/lab2# helm version
 version.BuildInfo{Version:"v3.20.2", GitCommit:"8fb76d6ab555577e98e23b7500009537a471feee", GitTreeState:"clean", GoVersion:"go1.25.9"}
 ```
 
-Создаем hemm chart:
+Создаем helm chart:
 ```
 root@m5:/home/andrey/devops/lab2# helm create hello-chart
 Creating hello-chart
