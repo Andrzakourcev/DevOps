@@ -152,6 +152,8 @@ andrey@m5:~/devops/lab2curl http://192.168.49.2:30007
 <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAGPElEQVR42u1bDUyUdRj/iwpolMlcbZqtXFnNsuSCez/OIMg1V7SFONuaU8P1MWy1lcPUyhK
 ```
 
+В первой части лабы был успешно развернут локальный Kubernetes-кластер с использованием Minikube, в котором через YAML-манифесты были созданы и запущены основные ресурсы (Deployment, Service и ConfigMap). В результате было задеплоено тестовое приложение “Hello World”
+
 # Часть 2 - Helm
 
 Устанавливаем helm:
