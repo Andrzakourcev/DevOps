@@ -256,6 +256,43 @@ REVISION UPDATED                  STATUS     CHART             APP VERSION DESCR
 
 Ура-ура все работает!
 
+# ВАЖНАЯ ЗАМЕЧАНИЕ
+
+Только при написании отчета я заметил строчку в задании - `(сервис любой из своих не опенсорсных, вывод “hello world” в браузер тоже подойдёт)`
+
+Поэтому... Быстренько клипаем Hello wolrd python приложуху XD
+
+Наш супер мега сложный app.py:
+
+<img width="371" height="198" alt="image" src="https://github.com/user-attachments/assets/2464f1ac-63fa-4cfc-9a53-73b87d36226c" />
+
+Не менее умопомрачительный Dockerfile:
+
+<img width="334" height="207" alt="image" src="https://github.com/user-attachments/assets/1a50365b-1cda-4132-aabc-4c3c847cc470" />
+
+Окружение - `eval $(minikube docker-env)` 
+
+Билдим образ - `docker build -t my-flask-app:1.0 .`
+
+Переписываем Deployment и Service: 
+
+<img width="440" height="390" alt="image" src="https://github.com/user-attachments/assets/2fbe1448-5d03-4697-91b5-745731ab888c" />
+
+<img width="354" height="280" alt="image" src="https://github.com/user-attachments/assets/3f39ad3f-3264-40a7-9e07-f4b28c6b1669" />
+
+Применяем манифесты:
+
+```
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
+
+Проверка:
+
+<img width="599" height="118" alt="image" src="https://github.com/user-attachments/assets/ae11208a-0383-493b-a049-dc64d0d42580" />
+
+Теперь все по заданию!
+
 # Три причины, по которым использовать хелм удобнее чем классический деплой через кубернетес манифесты
 
 1. Шаблонизация
